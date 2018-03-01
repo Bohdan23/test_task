@@ -102,6 +102,7 @@ $(document).ready(function() {
   // Clear btn
   $('.clear-btn').on('click', function() {
     $('#submit').attr('disabled', 'disabled').attr('title', 'Please, fills all require fields.');
+    $('.image-box').find('img').attr('src','#').hide();
   });
 
   // Form submit
