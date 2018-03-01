@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Test tast Lypynskyi B.</title>
+	<link rel="stylesheet" href="web/css/vendor/bootstrap.min.css">
+	<link rel="stylesheet" href="web/css/main.css">
+</head>
+<body>
+	<div class="main-wrapper">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="tab col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<form id="contactForm" name="contactForm" action="https://fakeurl.com/submit_issue">
+						<div class="form-group form-group-name">
+							<label for="name">Name</label>
+							<input type="text" class="form-control" id="name" placeholder="Enter your name">
+							<small class="form-text text-muted help-warning">Enter only letters and spaces.</small>
+						</div>
+						<div class="form-group form-group-email">
+							<label for="email">Email address <span class="red">*</span></label>
+							<input type="text" class="form-control" id="email" placeholder="Enter email">
+							<small class="form-text text-muted help-warning">Thi field is required. Write only emails from @gmail.com and @outlook.com.</small>
+						</div>
+						<div class="form-group">
+							<label for="season">What is your favorite season? <span class="red">*</span></label>
+							<select class="form-control" id="season" name="season">
+								<option value="" selected disabled>Choose your option</option>
+								<option value="spring">Spring</option>
+								<option value="summer">Summer</option>
+								<option value="autumn">Autumn</option>
+								<option value="winter">Winter</option>
+							</select>
+						</div>
+						<button type="reset" class="btn btn-primary clear-btn" >Clear all fields</button>
+					</form>
+				</div>
+				<div class="tab col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="form-group form-group-message">
+						<label for="message">Your message <span class="red">*</span></label>
+						<textarea class="form-control" id="message" form="contactForm"></textarea>
+						<small class="form-text text-muted help-warning">Thi field is required. Min length - 3, Max length - 300</small>
+					</div>
+					<div class="image-preview">
+						<div class="form-group">
+							<label for="photoFile">
+								<div class="image-wrapper">
+									<div class="image-box">
+										<img src="#" alt="photo" id="previewPhoto">
+									</div>
+									<span>Upload your photo</span>
+								</div>
+							</label>
+							<input type="file" class="form-control-file" id="photoFile" form="contactForm" name="tmp_img">
+						</div>
+					</div>
+					<button type="submit" class="btn btn-primary" form="contactForm" id="submit">Send</button>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<script src="web/js/vendor/jquery-2.1.1.min.js"></script>
+	<script src="web/js/vendor/bootstrap.min.js"></script>
+	<script src="web/js/main.js"></script>
+</body>
+</html>

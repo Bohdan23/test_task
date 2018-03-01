@@ -1,0 +1,75 @@
+.tab {
+	textarea {
+		resize: none;
+		height: 100px;
+	}
+}
+
+.image {
+	&-preview {
+		display: flex;
+	}
+	&-wrapper {
+		text-align: center;
+		span {
+			cursor: pointer;
+		}
+	}
+	&-box {
+		border: 2px solid silver;
+		border-radius: 5px;
+		width: 170px;
+		height: 170px;
+		margin-bottom: 20px;
+	    /*background-color: #ffdd57;*/
+		background-image: url('../images/download.svg');
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: 19%;
+		cursor: pointer;
+		transition: .15s ease-in-out;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			object-position: center;
+		}
+	}
+}
+
+#photoFile {
+	display: none;
+}
+
+button[disabled] {
+	cursor: not-allowed;
+}
+
+.red {
+	color: red;
+	font-size: 15px;
+}
+
+.help-warning {
+	display: none;
+}
+
+.clear-btn {
+	margin-bottom: 25px;
+}
+
+
+.form-group-error {
+	input, textarea {
+		border: 2px solid red;
+	}
+	.help-warning {
+		color: red !important;
+		padding-left: 5px;
+		display: block;
+	}
+}
+
+input, textarea, select {
+	margin-top: 7px;
+}

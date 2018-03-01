@@ -1,0 +1,27 @@
+@import "helpers/_reset.scss";
+@import "helpers/_fonts.scss";
+@import "helpers/_variables.scss";
+
+* {
+	box-sizing: border-box;
+}
+
+
+body { 
+	min-width: 320px;
+	font-family: latoregular, sans-serif;
+	font-size: 14px;
+    background-color: #f6f4f1;
+}
+
+a { 
+	text-decoration: none;
+}
+
+.main-wrapper {
+	margin: 50px auto 100px auto;
+	width: 100%;
+	max-width: 1400px;
+}
+
+@import "parts/_tabs.scss"
