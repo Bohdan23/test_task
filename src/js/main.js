@@ -108,9 +108,10 @@ $(document).ready(function() {
   // Form submit
   $('#contactForm').on('submit', function(e) {
     e.preventDefault();
-    // var formData = new FormData();
-    // var uploadPhoto = $('#photoFile').files[0];
-    // formData.append('photo', uploadPhoto);
+    var formData = new FormData();
+    // var uploadPhoto = $('#photoFile')[0].files[0];
+    formData.append('photo', $('#photoFile')[0].files[0]);
+    console.log(formData);
     var infoObj = {
       email: $('#email').val(),
       select: $('#season').val(),
@@ -126,7 +127,7 @@ $(document).ready(function() {
       $.post($(this).attr('action'), infoObj, function(data){}, 'json');
       $('#modal').modal({show: true});
       $('.modal-title').text('Request complete!');
-      
+      $('.clear-btn').click();
     }
   });
 });
